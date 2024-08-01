@@ -1,6 +1,6 @@
 package org.example;
 
-public enum Values {
+public enum Rank {
     ACE("Ace",11),
     TWO("Two",2),
     THREE("Three",3),
@@ -19,7 +19,7 @@ public enum Values {
     String rankName;
     int rankValue;
 
-    Values(String rankName, int rankValue){
+    Rank(String rankName, int rankValue){
         this.rankName = rankName;
         this.rankValue = rankValue;
     }

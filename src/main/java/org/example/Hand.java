@@ -9,10 +9,18 @@ public class Hand {
 
     private ArrayList<Card> hand;
 
+    public void discardHand(Deck discardDeck){
+        discardDeck.addCards(hand);
+        hand.clear();
+    }
+
     public Hand(){
         hand = new ArrayList<Card>();
     }
 
+    public Card getCard(int index){
+        return hand.get(index);
+    }
 
 
     public void takeCard(Deck deck){
